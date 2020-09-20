@@ -59,11 +59,10 @@ def piano2seq(midi):
             velo = note.velocity
         q.append(Event(note.start, 'down', note.pitch))
         q.append(Event(note.end, 'up', note.pitch))
-    sorted(q, key=lambda x: x.time)
 
     t = 0
     qfull = []
-    for e in q:
+    for e in sorted(q, key=lambda x: x.time):
         d = e.time - t
         while d > 0.01:
             dd = min(d, 1) - 0.01
