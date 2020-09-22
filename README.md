@@ -5,6 +5,7 @@ In this homework, your goal is to implement and train two LSTM models, one calle
 ## Data
 The piano data (in midi format) can be downloaded from: 
 https://storage.googleapis.com/magentadata/datasets/maestro/v1.0.0/maestro-v1.0.0-midi.zip
+
 By default, when unzipped, the data will be put into a directory named "maestro-v1.0.0".
 
 The file "midi2seq.py" contains a set of functions that help to process the midi data and convert the data to sequences of events.   
